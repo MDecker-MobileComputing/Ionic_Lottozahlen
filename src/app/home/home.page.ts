@@ -24,4 +24,14 @@ export class HomePage {
     this.lottozahlenText = zufallszahl + "";
   }
 
+
+  private lottoZahlenErzeugen(): void {
+
+
+    for (let i = 1; i <= 49; i++) {}
+
+    }
+
+  }
+
 }
