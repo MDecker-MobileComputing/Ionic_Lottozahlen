@@ -28,7 +28,7 @@ export class HomePage {
   private lottoZahlenErzeugen(): void {
 
 
-    for (let i = 1; i <= 49; i++) {}
+    for (let i = 1; i <= 49; i++) {
 
     }
 
