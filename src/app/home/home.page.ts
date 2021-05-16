@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding). */
+  private lottozahlenText = "";
+
   constructor() {}
+
+  /**
+   * Event-Handler-Methode für Button, der Erzeugung der Zufallszahlen auslöst.
+   */
+  private onLottozahlenErzeugen() {
+
+    const min = 1;
+    const max = 49;
+    const zufallszahl = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    this.lottozahlenText = zufallszahl + "";
+  }
 
 }

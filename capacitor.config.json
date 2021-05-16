@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "lottozahlen",
+  "appId": "de.mide.ionic.lottozahlengenerator",
+  "appName": "Lottozahlen-Generator",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
