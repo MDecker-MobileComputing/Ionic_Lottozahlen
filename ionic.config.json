@@ -1,0 +1,7 @@
+{
+  "name": "lottozahlen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
