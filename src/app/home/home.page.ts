@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding). */
-  private lottozahlenText = "";
+  public lottozahlenText = "";
 
   constructor() {}
 
   /**
    * Event-Handler-Methode für Button, der Erzeugung der Zufallszahlen auslöst.
    */
-  private onLottozahlenErzeugen() {
+  public onLottozahlenErzeugen() {
 
     const min = 1;
     const max = 49;
