@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1621201207982,
+  "timestamp": 1621246106206,
   "index": "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/index.html",
   "assetGroups": [
     {
@@ -62,20 +62,17 @@
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/57.920ff0d7fd08a3371758.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/58.55ee2b498744ff70f3ff.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/59.76fa492d855a37bd9c51.js",
-        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/9.5b2db66cc44e44719a68.js",
+        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/9.67407dfe4cc71e1b7b7d.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/common.d7212a14bee892172f1b.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/index.html",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/main.0ae6403f06c230363bee.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/manifest.webmanifest",
-        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/ngsw-worker.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills-core-js.926b2b327e549d9db414.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills-css-shim.359ce37e09f907eb011b.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills-dom.bf6c5ee357b1ca4890e9.js",
         "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills.583ce99f420b3934860c.js",
-        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/runtime.9bb57d5416a5fab77171.js",
-        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/safety-worker.js",
-        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/styles.67a8a1b809171d3a28ee.css",
-        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/worker-basic.min.js"
+        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/runtime.693e9a2a9c7aed7efca2.js",
+        "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/styles.67a8a1b809171d3a28ee.css"
       ],
       "patterns": []
     },
@@ -154,7 +151,7 @@
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/57.920ff0d7fd08a3371758.js": "50f04b902d71bff5e32e149614bd5af21ba2a894",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/58.55ee2b498744ff70f3ff.js": "50cfefb195fbc558e227f5ed063a1dd5f30f1410",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/59.76fa492d855a37bd9c51.js": "9e75d90efc0eabe910d8ca98727733a4243bb08a",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/9.5b2db66cc44e44719a68.js": "7c85a300621f5b3f7a4099f54d512f66c01cf9bf",
+    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/9.67407dfe4cc71e1b7b7d.js": "78dffd87709011fe22455fa673ec20e0aa4fa6cd",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/assets/icon/favicon.png": "7798b8e0eb61d7375c245af78bbf5c916932bf13",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -166,18 +163,15 @@
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/assets/shapes.svg": "5413e95adabcb2cb639970051f55e0ddb64ace53",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/common.d7212a14bee892172f1b.js": "b642a48f3ee85c44dc00133339b9c786a92dc589",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/index.html": "2d95401ab82a9bf89a8bb1a74345de6b7e150aeb",
+    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/index.html": "cb66586ce4c3ceeeee62d51098980fad4305637b",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/main.0ae6403f06c230363bee.js": "b1cb5341ba691ef70e87fae93a41a2f6568bd6f2",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/manifest.webmanifest": "9a088b7c4339228d1082e666ce105dc889bc180c",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/ngsw-worker.js": "b44316be1c1338e9e8bd30ee40946085916c58e4",
+    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/manifest.webmanifest": "e8defc0c9f90bc8c43f20ab6c6a5ac580ae361c6",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills-core-js.926b2b327e549d9db414.js": "f71279ef311f3c1cecc661b8aabe632959a282f8",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills-css-shim.359ce37e09f907eb011b.js": "3f4dd6685f2d8a7a5f6fe2d3fa9e9320d460b112",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills-dom.bf6c5ee357b1ca4890e9.js": "3d12740300342a24e404779d9c0a06c58f44ec7c",
     "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/polyfills.583ce99f420b3934860c.js": "cc853f64073e19a637806fc9433d22238803538f",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/runtime.9bb57d5416a5fab77171.js": "f20310d19275b9503152c5f722a4101d79bd323a",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/safety-worker.js": "f532926317210be6e2679d21748dc44a35389807",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/styles.67a8a1b809171d3a28ee.css": "72ed30c32abeefabaded3f1b4d00e5cc1fa2a27b",
-    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/worker-basic.min.js": "f532926317210be6e2679d21748dc44a35389807"
+    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/runtime.693e9a2a9c7aed7efca2.js": "098770716d2c817eee66f73cd0f84a003c7f19ac",
+    "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/styles.67a8a1b809171d3a28ee.css": "72ed30c32abeefabaded3f1b4d00e5cc1fa2a27b"
   },
   "navigationUrls": [
     {
