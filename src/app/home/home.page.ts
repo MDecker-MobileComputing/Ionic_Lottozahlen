@@ -12,6 +12,7 @@ export class HomePage {
 
   constructor() {}
 
+
   /**
    * Event-Handler-Methode für Button, der Erzeugung der Zufallszahlen auslöst.
    */
@@ -25,13 +26,23 @@ export class HomePage {
   }
 
 
+  /**
+   * Methode erzeugt die anzuzeigenden Zufallszahlen (6 Zahlen von 1 bis 49).
+   */
   private lottoZahlenErzeugen(): void {
 
 
     for (let i = 1; i <= 49; i++) {
 
     }
-
+    
+    /*
+    meinArray.sort(function(a,b){ // nach Attribut "zufallszahl" sortieren
+        if (a.zufallszahl === b.zufallszahl) { return  0; }
+        if (a.zufallszahl <   b.zufallszahl) { return -1; }
+        if (a.zufallszahl >   b.zufallszahl) { return  1; }
+    });    
+    */
   }
 
 }

@@ -6,3 +6,6 @@
 @REM Anpassung Lösung von Ionic ("--" vor "--base-href"): https://github.com/ionic-team/ionic-cli/issues/3600#issuecomment-436798575
 
 ionic build --prod --output-path=docs -- --base-href "https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/"
+
+@REM Die beiden Attribute können auch in der Datei angular.json angepasst werden, aber wegen der Änderung von base-href
+@REM funktioniert dann "ionic serve" nicht mehr.
