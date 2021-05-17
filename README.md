@@ -36,6 +36,15 @@ The commands adds the ServiceWorker and the Web App Manifest (see [here](/src/ma
 
 <br>
 
+To generate the PWA in folder [docs/](docs/) the following command has to be executed:
+```
+ionic build --prod
+```
+The default output folder for this command is `www`, but for this app it was changed to `docs` so the PWA can be served by [GitHub Pages](https://pages.github.com/).
+See file [angular.json](angular.json#L17), attribute `projects/app/architect/options/outputPath`.
+
+<br>
+
 ----
 ## License ##
 
