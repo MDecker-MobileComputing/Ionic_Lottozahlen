@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "Lottozahlen-Generator",
+  "short_name": "Lotto-Gen",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
