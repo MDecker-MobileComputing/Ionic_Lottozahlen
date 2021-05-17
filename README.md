@@ -2,7 +2,11 @@
 
 This repository contains a simple Ionic app using Angular and Capacitor, whose purpose is it to generate random numbers for the German lottery (6 out of 49).
 
-The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps), which can be accessed under the following URL: https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
+<br>
+
+The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps), which can be accessed under the following URL: 
+
+  https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
 
 <br>
 
