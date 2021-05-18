@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  backgroundColorArray:string[] = [];
+  public backgroundColorArray:string[] = [];
+
+  /** Array enthält Zahlen 0 bis einschl. 6 für die Anzahl der Zeilen bzw. Spalten. */
+  private nullBisSechs = [...new Array(7)].map( (_,i) => i );
+
 
   /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding). */
   public lottozahlenText = "";

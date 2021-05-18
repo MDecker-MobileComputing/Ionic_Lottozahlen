@@ -21,6 +21,7 @@
 
   &nbsp;
 
+  <!--
   <ion-grid class="ion-margin">
     <ion-row>
       <ion-col>1</ion-col>
@@ -49,6 +50,15 @@
         <ion-col>20</ion-col>
         <ion-col>21</ion-col>
       </ion-row>
+  </ion-grid>
+  -->
+
+  &nbsp;
+
+  <ion-grid>
+    <ion-row *ngFor="let nummerZeile of nullBisSechs">
+        <ion-col *ngFor="let nummerSpalte of nullBisSechs" [style.background]="backgroundColorArray[nummerZeile*7 + nummerSpalte + 1]">{{nummerZeile*7 + nummerSpalte + 1}}</ion-col>
+    </ion-row>
   </ion-grid>
 
 </ion-content>
