@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  public backgroundColorArray:string[] = [];
+  /**
+   * Array enthält unter Index mit Lottozahl die aktuelle Hintergrundfarbe (String für CSS-Farbnamen)
+   * für diese Zahl, also ob die jeweilige Zahl ausgewählt wurde oder nicht; 1-basierter Index!
+   */
+  public hintergrundFarbeArray:string[] = [];
 
   /** Array enthält Zahlen 0 bis einschl. 6 für die Anzahl der Zeilen bzw. Spalten. */
   private nullBisSechs = [...new Array(7)].map( (_,i) => i );
@@ -16,21 +20,22 @@ export class HomePage {
   /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding). */
   public lottozahlenText = "";
 
+  /**
+   * Initialisiert den Array mit den Hintergrundfarben.
+   */
   constructor() {
 
-    this.backgroundColorArray.push("dummy"); // skip first element to get 1-based array
+    this.hintergrundFarbeArray.push("dummy"); // Element mit Index=0 wird nicht verwendet um 1-basierten index zu erhalten
 
-    for (let i = 1; i <= 49; i++) {
+    for (let i = 1; i <= 49; i++) { this.hintergrundFarbeArray.push("white"); };
+  }
 
-        if (i % 2 === 0) {
+  /**
+   * Setzt Hintergrund für alle 49 Zahlen auf weiß, d.h. alle Zahlen sind "abgewählt".
+   */
+  private alleZahlenWeiss() {
 
-            this.backgroundColorArray.push("white");
-
-        } else {
-
-            this.backgroundColorArray.push("orange");
-        }
-    }
+    for (let i = 1; i <= 49; i++) { this.hintergrundFarbeArray[i] = "white"; }
   }
 
 
@@ -39,11 +44,16 @@ export class HomePage {
    */
   public onLottozahlenErzeugen() {
 
+    this.alleZahlenWeiss();
+
     let ergebnisStr = "";
     const lottoZahlenArray = this.lottoZahlenErzeugen();
     for (let i = 0; i < lottoZahlenArray.length; i++)     {
 
-        ergebnisStr += lottoZahlenArray[i] + "  ";
+        const zahl = lottoZahlenArray[i];
+        ergebnisStr +=  zahl + "  ";
+
+        this.hintergrundFarbeArray[zahl] = "orange";
     }
 
     this.lottozahlenText = ergebnisStr;

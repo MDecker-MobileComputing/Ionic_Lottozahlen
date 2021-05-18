@@ -21,43 +21,10 @@
 
   &nbsp;
 
-  <!--
-  <ion-grid class="ion-margin">
-    <ion-row>
-      <ion-col>1</ion-col>
-      <ion-col>2</ion-col>
-      <ion-col>3</ion-col>
-      <ion-col>4</ion-col>
-      <ion-col>5</ion-col>
-      <ion-col>6</ion-col>
-      <ion-col>7</ion-col>
-    </ion-row>
-    <ion-row>
-        <ion-col [style.background]="backgroundColorArray[8]" >8</ion-col>
-        <ion-col [style.background]="backgroundColorArray[9]" >9</ion-col>
-        <ion-col [style.background]="backgroundColorArray[10]">10</ion-col>
-        <ion-col [style.background]="backgroundColorArray[11]">11</ion-col>
-        <ion-col>12</ion-col>
-        <ion-col>13</ion-col>
-        <ion-col>14</ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>15</ion-col>
-        <ion-col>16</ion-col>
-        <ion-col>17</ion-col>
-        <ion-col>18</ion-col>
-        <ion-col>19</ion-col>
-        <ion-col>20</ion-col>
-        <ion-col>21</ion-col>
-      </ion-row>
-  </ion-grid>
-  -->
-
-  &nbsp;
-
   <ion-grid>
     <ion-row *ngFor="let nummerZeile of nullBisSechs">
-        <ion-col *ngFor="let nummerSpalte of nullBisSechs" [style.background]="backgroundColorArray[nummerZeile*7 + nummerSpalte + 1]">{{nummerZeile*7 + nummerSpalte + 1}}</ion-col>
+        <ion-col *ngFor="let nummerSpalte of nullBisSechs"
+                 [style.background]="hintergrundFarbeArray[nummerZeile*7 + nummerSpalte + 1]">{{nummerZeile*7 + nummerSpalte + 1}}</ion-col>
     </ion-row>
   </ion-grid>
 
