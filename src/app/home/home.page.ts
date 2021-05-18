@@ -7,24 +7,33 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  backgroundColorArray:string[] = [];
+
   /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding). */
   public lottozahlenText = "";
 
-  constructor() {}
+  constructor() {
+
+    this.backgroundColorArray.push("dummy"); // skip first element to get 1-based array
+
+    for (let i = 1; i <= 49; i++) {
+
+        if (i % 2 === 0) {
+
+            this.backgroundColorArray.push("white");
+
+        } else {
+
+            this.backgroundColorArray.push("orange");
+        }
+    }
+  }
 
 
   /**
    * Event-Handler-Methode für Button, der Erzeugung der Zufallszahlen auslöst.
    */
   public onLottozahlenErzeugen() {
-
-    /*
-    const min = 1;
-    const max = 49;
-    const zufallszahl = Math.floor(Math.random() * (max - min + 1)) + min;
-
-    this.lottozahlenText = zufallszahl + "";
-    */
 
     let ergebnisStr = "";
     const lottoZahlenArray = this.lottoZahlenErzeugen();
