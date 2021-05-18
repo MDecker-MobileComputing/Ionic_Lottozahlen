@@ -14,10 +14,10 @@ export class HomePage {
   public hintergrundFarbeArray:string[] = [];
 
   /** Array enthält Zahlen 0 bis einschl. 6 für die Anzahl der Zeilen bzw. Spalten. */
-  private nullBisSechs = [...new Array(7)].map( (_,i) => i );
+  public nullBisSechs = [...new Array(7)].map( (_,i) => i );
 
 
-  /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding). */
+  /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding); enthält Komma-separierte Liste der sechs Lottozahlen. */
   public lottozahlenText = "";
 
   /**
