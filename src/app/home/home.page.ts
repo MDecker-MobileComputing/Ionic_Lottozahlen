@@ -16,10 +16,6 @@ export class HomePage {
   /** Array enthält Zahlen 0 bis einschl. 6 für die Anzahl der Zeilen bzw. Spalten. */
   public nullBisSechs = [...new Array(7)].map( (_,i) => i );
 
-
-  /** Member-Variable ist an UI-Element gebunden (Two-Way-Binding); enthält Komma-separierte Liste der sechs Lottozahlen. */
-  public lottozahlenText = "";
-
   /**
    * Initialisiert den Array mit den Hintergrundfarben.
    */
@@ -46,17 +42,12 @@ export class HomePage {
 
     this.alleZahlenWeiss();
 
-    let ergebnisStr = "";
     const lottoZahlenArray = this.lottoZahlenErzeugen();
     for (let i = 0; i < lottoZahlenArray.length; i++)     {
 
         const zahl = lottoZahlenArray[i];
-        ergebnisStr +=  zahl + "  ";
-
         this.hintergrundFarbeArray[zahl] = "orange";
     }
-
-    this.lottozahlenText = ergebnisStr;
   }
 
 
