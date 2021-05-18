@@ -4,7 +4,7 @@ This repository contains a simple Ionic app using Angular and Capacitor, whose p
 
 <br>
 
-The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps), which can be accessed under the following URL: 
+The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps), which can be accessed under the following URL:
 
   https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
 
@@ -40,7 +40,9 @@ The commands adds the ServiceWorker and the Web App Manifest (see [here](/src/ma
 
 <br>
 
-To generate the PWA in folder [docs/](docs/) the batch file [bauePwa.bat](bauePwa.bat) has to be executed.
+To generate the PWA on Windows the batch file [bauePwa.bat](bauePwa.bat) has to be executed, while on
+MacOS and Linux the Bash script [bauePwa.sh](bauePwa.sh) has to be executed. After this the (updated) PWA
+should be in folder [docs/](docs/).
 
 <br>
 
