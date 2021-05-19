@@ -44,6 +44,9 @@ To generate the PWA on Windows the batch file [bauePwa.bat](bauePwa.bat) has to 
 MacOS and Linux the Bash script [bauePwa.sh](bauePwa.sh) has to be executed. After this the (updated) PWA
 should be in folder [docs/](docs/).
 
+When you push the new files in folder `docs/` to the GitHub repository, then the updated app should be available under the following 
+URL within a few minutes: https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
+
 <br>
 
 ----
