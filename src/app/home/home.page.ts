@@ -7,14 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  /**
-   * Array enthält unter Index mit Lottozahl die aktuelle Hintergrundfarbe (String für CSS-Farbnamen)
-   * für diese Zahl, also ob die jeweilige Zahl ausgewählt wurde oder nicht; 1-basierter Index!
-   */
-  public hintergrundFarbeArray:string[] = [];
-
-  /** Array enthält Zahlen 0 bis einschl. 6 für die Anzahl der Zeilen bzw. Spalten. */
   public nullBisSechs = [...new Array(7)].map( (_,i) => i );
+
+  public hintergrundFarbeArray:string[] = [];
 
   /**
    * Initialisiert den Array mit den Hintergrundfarben.
@@ -54,7 +49,7 @@ export class HomePage {
   /**
    * Methode erzeugt die anzuzeigenden Zufallszahlen (6 Zahlen von 1 bis 49).
    *
-   * @return  Array mit sechs zufällig ausgewählten Lottozahlen, aufsteigend sortiert.
+   * @return  Array mit sechs zufällig ausgewählten Lottozahlen, nicht sortiert!
    */
   private lottoZahlenErzeugen(): number[] {
 
@@ -78,11 +73,6 @@ export class HomePage {
 
         ergebnisArray.push( meinArray[i].lottozahl );
     }
-
-    ergebnisArray.sort(function(a,b){
-        if (a < b) { return -1; }
-        if (a > b) { return  1; }
-    });
 
     return ergebnisArray;
   }
