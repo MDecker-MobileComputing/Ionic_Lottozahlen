@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  /** Array enhält die Zahlen 1 bis 6, wird für ngFor benötigt. */
+  /** Array enhält die Zahlen 1 bis 6, wird für die beiden verschachtelten ngFor-Schleifen benötigt. */
   public nullBisSechs = [...new Array(7)].map( (_,i) => i );
 
-  /** Array enthält bei Index=0 ein Dummy-Element, und danach 49 Elemente mit der Hintergrundfarbe für die Lottozahlen. */
+  /** 
+   * Array enthält bei Index=0 ein Dummy-Element, und danach 49 Elemente mit der Hintergrundfarbe für die jeweilige Lottozahl,
+   * entweder `white` oder `orange`.
+   */
   public hintergrundFarbeArray:string[] = [];
 
   /**
@@ -28,7 +31,10 @@ export class HomePage {
    */
   private alleZahlenWeiss() {
 
-    for (let i = 1; i <= 49; i++) { this.hintergrundFarbeArray[i] = "white"; }
+    for (let i = 1; i <= 49; i++) { 
+      
+      this.hintergrundFarbeArray[i] = "white"; 
+    }
   }
 
 
