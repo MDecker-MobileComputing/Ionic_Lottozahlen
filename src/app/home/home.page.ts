@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  /** Array enhält die Zahlen 1 bis 6, wird für ngFor benötigt. */
   public nullBisSechs = [...new Array(7)].map( (_,i) => i );
 
+  /** Array enthält bei Index=0 ein Dummy-Element, und danach 49 Elemente mit der Hintergrundfarbe für die Lottozahlen. */
   public hintergrundFarbeArray:string[] = [];
 
   /**
