@@ -50,9 +50,9 @@ The commands adds the ServiceWorker and the Web App Manifest (see [here](/src/ma
 
 <br>
 
-To generate the PWA on Windows the batch file [bauePwa.bat](bauePwa.bat) has to be executed, while on
-MacOS and Linux the Bash script [bauePwa.sh](bauePwa.sh) has to be executed. After this the (updated) PWA
-should be in folder [docs/](docs/).
+To generate the PWA to be served on *GitHub Pages*, on Windows the batch file [bauePwaFuerGitHubPages.bat](bauePwaFuerGitHubPages.bat) 
+has to be executed, while on MacOS and Linux the Bash script [bauePwaFuerGitHubPages.sh](bauePwaFuerGitHubPages.sh) has to be executed. 
+After this the (updated) PWA should be in folder [docs/](docs/).
 
 When you push the new files in folder `docs/` to the GitHub repository, then the updated app should be available under the following 
 URL within a few minutes: https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
