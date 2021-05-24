@@ -10,7 +10,7 @@ export class HomePage {
   /** Array enhält die Zahlen 1 bis 6, wird für die beiden verschachtelten ngFor-Schleifen benötigt. */
   public nullBisSechs = [...new Array(7)].map( (_,i) => i );
 
-  /** 
+  /**
    * Array enthält bei Index=0 ein Dummy-Element, und danach 49 Elemente mit der Hintergrundfarbe für die jeweilige Lottozahl,
    * entweder `white` oder `orange`.
    */
@@ -27,13 +27,13 @@ export class HomePage {
   }
 
   /**
-   * Setzt Hintergrund für alle 49 Zahlen auf weiß, d.h. alle Zahlen sind "abgewählt".
+   * Setzt Hintergrund für alle 49 Zahlen auf `white`, d.h. nach Aufruf dieser Methode sind alle Zahlen "abgewählt".
    */
   private alleZahlenWeiss() {
 
-    for (let i = 1; i <= 49; i++) { 
-      
-      this.hintergrundFarbeArray[i] = "white"; 
+    for (let i = 1; i <= 49; i++) {
+
+      this.hintergrundFarbeArray[i] = "white";
     }
   }
 
@@ -45,7 +45,9 @@ export class HomePage {
 
     this.alleZahlenWeiss();
 
+    // eigentliches auswürfeln der Zusatzzahlen
     const lottoZahlenArray = this.lottoZahlenErzeugen();
+
     for (let i = 0; i < lottoZahlenArray.length; i++)     {
 
         const zahl = lottoZahlenArray[i];
