@@ -12,8 +12,8 @@
   &nbsp;
 
   <ion-grid>
-    <ion-row *ngFor="let nummerZeile of nullBisSechs">
-        <ion-col *ngFor="let nummerSpalte of nullBisSechs"
+    <ion-row *ngFor="let nummerZeile of nullBisSechsArray">
+        <ion-col *ngFor="let nummerSpalte of nullBisSechsArray"
                  [style.background]="hintergrundFarbeArray[nummerZeile*7 + nummerSpalte + 1]">{{nummerZeile*7 + nummerSpalte + 1}}</ion-col>
     </ion-row>
   </ion-grid>
