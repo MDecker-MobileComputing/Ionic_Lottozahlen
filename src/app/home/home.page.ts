@@ -11,8 +11,8 @@ export class HomePage {
   public nullBisSechsArray = [...new Array(7)].map( (_,i) => i );
 
   /**
-   * Array enthält bei Index=0 ein Dummy-Element, und danach 49 Elemente mit der Hintergrundfarbe für die jeweilige Lottozahl,
-   * entweder `white` oder `orange`.
+   * Array enthält bei Index=0 ein Dummy-Element, und danach 49 Elemente mit der Hintergrundfarbe
+   * für die jeweilige Lottozahl, entweder `white` oder `orange`.
    */
   public hintergrundFarbeArray:string[] = [];
 
@@ -21,13 +21,18 @@ export class HomePage {
    */
   constructor() {
 
-    this.hintergrundFarbeArray.push("dummy"); // Element mit Index=0 wird nicht verwendet um 1-basierten index zu erhalten
+    // Element mit Index=0 wird nicht verwendet um 1-basierten index zu erhalten
+    this.hintergrundFarbeArray.push("dummy");
 
-    for (let i = 1; i <= 49; i++) { this.hintergrundFarbeArray.push("white"); };
+    for (let i = 1; i <= 49; i++) {
+
+      this.hintergrundFarbeArray.push("white");
+    };
   }
 
   /**
-   * Setzt Hintergrund für alle 49 Zahlen auf `white`, d.h. nach Aufruf dieser Methode sind alle Zahlen "abgewählt".
+   * Setzt Hintergrund für alle 49 Zahlen auf `white`, d.h. nach Aufruf dieser Methode sind
+   * alle Zahlen "abgewählt".
    */
   private alleZahlenWeiss() {
 
@@ -45,7 +50,7 @@ export class HomePage {
 
     this.alleZahlenWeiss();
 
-    // eigentliches auswürfeln der Zusatzzahlen
+    // eigentliches Auswürfeln der Zusatzzahlen
     const lottoZahlenArray = this.lottoZahlenErzeugen();
 
     for (let i = 0; i < lottoZahlenArray.length; i++)     {
@@ -72,6 +77,7 @@ export class HomePage {
     }
 
     meinArray.sort(function(a,b){ // nach Attribut "zufallszahl" sortieren
+
         if (a.zufallszahl === b.zufallszahl) { return  0; }
         if (a.zufallszahl <   b.zufallszahl) { return -1; }
         if (a.zufallszahl >   b.zufallszahl) { return  1; }
