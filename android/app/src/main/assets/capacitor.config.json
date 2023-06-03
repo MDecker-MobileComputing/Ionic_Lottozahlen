@@ -1,13 +1,8 @@
 {
-	"appId": "de.mide.ionic.lottozahlengenerator",
-	"appName": "Lottozahlen-Generator",
-	"bundledWebRuntime": false,
-	"npmClient": "npm",
+	"appId": "de.mide.ionic.lottozahlen",
+	"appName": "Lottozahlen",
 	"webDir": "www",
-	"plugins": {
-		"SplashScreen": {
-			"launchShowDuration": 0
-		}
-	},
-	"cordova": {}
+	"server": {
+		"androidScheme": "https"
+	}
 }

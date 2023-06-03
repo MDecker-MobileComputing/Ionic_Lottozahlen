@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { LottozahlMitZufallszahl } from '../lottozahl-mit-zufallszahl';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -68,20 +70,21 @@ export class HomePage {
    */
   private lottoZahlenErzeugen(): number[] {
 
-    const meinArray = [];
+    let meinArray : Array<LottozahlMitZufallszahl> = [];
 
     for (let i = 1; i <= 49; i++) {
 
-        const lottozahlUndZufallszahl = { lottozahl: i, zufallszahl: Math.random() };
+        const lottozahlUndZufallszahl = new LottozahlMitZufallszahl(i, Math.random());
         meinArray.push(lottozahlUndZufallszahl);
     }
 
-    meinArray.sort(function(a,b){ // nach Attribut "zufallszahl" sortieren
+    meinArray.sort( (a,b) => {
 
-        if (a.zufallszahl === b.zufallszahl) { return  0; }
-        if (a.zufallszahl <   b.zufallszahl) { return -1; }
-        if (a.zufallszahl >   b.zufallszahl) { return  1; }
-    });
+      if (a.zufallszahl === b.zufallszahl) { return  0; }
+      if (a.zufallszahl <   b.zufallszahl) { return -1; }
+      return 1;
+
+    } );
 
     const ergebnisArray:number[] = [];
 
