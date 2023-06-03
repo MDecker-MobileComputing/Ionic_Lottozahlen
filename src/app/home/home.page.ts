@@ -83,7 +83,6 @@ export class HomePage {
       if (a.zufallszahl === b.zufallszahl) { return  0; }
       if (a.zufallszahl <   b.zufallszahl) { return -1; }
       return 1;
-
     } );
 
     const ergebnisArray:number[] = [];
