@@ -6,7 +6,7 @@ This repository contains a simple Ionic app using Angular and Capacitor, whose p
 
 The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps), which can be accessed under the following URL:
 
-  https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
+&nbsp;&nbsp;&nbsp;&nbsp;  https://mdecker-mobilecomputing.github.io/Ionic_Lottozahlen/
 
 <br>
 
