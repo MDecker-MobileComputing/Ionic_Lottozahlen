@@ -1,5 +1,7 @@
 # Ionic_Lottozahlen #
 
+<br>
+
 This repository contains a simple Ionic app using Angular and Capacitor, whose purpose is it to generate random numbers for the German lottery (6 out of 49).
 
 <br>
@@ -65,5 +67,9 @@ URL within a few minutes: https://mdecker-mobilecomputing.github.io/Ionic_Lottoz
 ----
 ## License ##
 
+<br>
+
 See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License)
 for the files in this repository.
+
+<br>
