@@ -1,4 +1,4 @@
-# Ionic_Lottozahlen #
+# Lottozahlenwürfel mit Ionic #
 
 <br>
 
@@ -16,6 +16,8 @@ The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla
 
 ## Screenshots of the Android app ##
 
+<br>
+
 ![Screenshot 1](screenshot_1.png)   ![Screenshot 2](screenshot_2.png)
 
 ![Screenshot 3](screenshot_3.png)
@@ -25,6 +27,8 @@ The app is also offered as [Progressive Web App (PWA)](https://developer.mozilla
 ----
 
 ## Setup of Ionic project for PWA ##
+
+<br>
 
 Create the project with Capacitor:
 ```
@@ -65,6 +69,7 @@ URL within a few minutes: https://mdecker-mobilecomputing.github.io/Ionic_Lottoz
 <br>
 
 ----
+
 ## License ##
 
 <br>
