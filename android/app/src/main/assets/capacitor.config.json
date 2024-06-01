@@ -1,8 +1,0 @@
-{
-	"appId": "de.mide.ionic.lottozahlen",
-	"appName": "Lottozahlen",
-	"webDir": "www",
-	"server": {
-		"androidScheme": "https"
-	}
-}

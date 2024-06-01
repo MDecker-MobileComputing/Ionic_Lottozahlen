@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { LottozahlMitZufallszahl } from '../lottozahl-mit-zufallszahl';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -24,11 +25,11 @@ export class HomePage {
   constructor() {
 
     // Element mit Index=0 wird nicht verwendet um 1-basierten index zu erhalten
-    this.hintergrundFarbeArray.push("dummy");
+    this.hintergrundFarbeArray.push( "dummy" );
 
-    for (let i = 1; i <= 49; i++) {
+    for ( let i = 1; i <= 49; i++ ) {
 
-      this.hintergrundFarbeArray.push("white");
+      this.hintergrundFarbeArray.push( "white" );
     };
   }
 
@@ -38,7 +39,7 @@ export class HomePage {
    */
   private alleZahlenWeiss() {
 
-    for (let i = 1; i <= 49; i++) {
+    for ( let i = 1; i <= 49; i++ ) {
 
       this.hintergrundFarbeArray[i] = "white";
     }
@@ -55,7 +56,7 @@ export class HomePage {
     // eigentliches Auswürfeln der Zusatzzahlen
     const lottoZahlenArray = this.lottoZahlenErzeugen();
 
-    for (let i = 0; i < lottoZahlenArray.length; i++)     {
+    for ( let i = 0; i < lottoZahlenArray.length; i++ )     {
 
         const zahl = lottoZahlenArray[i];
         this.hintergrundFarbeArray[zahl] = "orange";
@@ -72,22 +73,22 @@ export class HomePage {
 
     let meinArray : Array<LottozahlMitZufallszahl> = [];
 
-    for (let i = 1; i <= 49; i++) {
+    for ( let i = 1; i <= 49; i++ ) {
 
-        const lottozahlUndZufallszahl = new LottozahlMitZufallszahl(i, Math.random());
-        meinArray.push(lottozahlUndZufallszahl);
+        const lottozahlUndZufallszahl = new LottozahlMitZufallszahl( i, Math.random() );
+        meinArray.push( lottozahlUndZufallszahl );
     }
 
-    meinArray.sort( (a,b) => {
+    meinArray.sort( ( a,b ) => {
 
-      if (a.zufallszahl === b.zufallszahl) { return  0; }
-      if (a.zufallszahl <   b.zufallszahl) { return -1; }
+      if ( a.zufallszahl === b.zufallszahl ) { return  0; }
+      if ( a.zufallszahl <   b.zufallszahl ) { return -1; }
       return 1;
     } );
 
     const ergebnisArray:number[] = [];
 
-    for (let i = 0; i < 6; i++) {
+    for ( let i = 0; i < 6; i++ ) {
 
         ergebnisArray.push( meinArray[i].lottozahl );
     }
