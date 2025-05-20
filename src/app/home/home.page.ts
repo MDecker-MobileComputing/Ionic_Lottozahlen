@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 
 import { LottozahlMitZufallszahl } from '../lottozahl-mit-zufallszahl';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
+  standalone: false,
 })
 export class HomePage {
 
@@ -18,6 +18,7 @@ export class HomePage {
    * für die jeweilige Lottozahl, entweder `white` oder `orange`.
    */
   public hintergrundFarbeArray:string[] = [];
+
 
   /**
    * Initialisiert den Array mit den Hintergrundfarben.
@@ -32,6 +33,7 @@ export class HomePage {
       this.hintergrundFarbeArray.push( "white" );
     };
   }
+
 
   /**
    * Setzt Hintergrund für alle 49 Zahlen auf `white`, d.h. nach Aufruf dieser Methode sind
