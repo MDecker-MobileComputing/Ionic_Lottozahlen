@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 
 import { LottozahlMitZufallszahl } from '../lottozahl-mit-zufallszahl';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  standalone: false,
+  standalone: false
 })
 export class HomePage {
 
