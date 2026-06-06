@@ -26,12 +26,15 @@
                 "output": "assets"
               },
               {
+                "glob": "**/*",
+                "input": "public",
+                "output": "."
+              },
+              {
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
-              },
-              "src/manifest.webmanifest",
-              "src/manifest.webmanifest"
+              }
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
             "scripts": [],
@@ -110,12 +113,15 @@
                 "output": "assets"
               },
               {
+                "glob": "**/*",
+                "input": "public",
+                "output": "."
+              },
+              {
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
-              },
-              "src/manifest.webmanifest",
-              "src/manifest.webmanifest"
+              }
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
             "scripts": []
@@ -143,7 +149,7 @@
     "schematicCollections": [
       "@ionic/angular-toolkit"
     ],
-    "analytics": "d5ac8b0a-8723-4d0e-ba7e-4e17b1d84576"
+    "analytics": "8172419e-0aac-49a8-b769-1441fac81db5"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

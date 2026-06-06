@@ -20,6 +20,7 @@ log.txt
 # Ionic
 /.ionic
 /www
+/www-eldecker
 /platforms
 /plugins
 
