@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "Lottozahlengenerator",
+  "short_name": "Lottozahlen",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
